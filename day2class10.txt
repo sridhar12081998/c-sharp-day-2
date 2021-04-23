@@ -1,0 +1,25 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter a string");
+		string inputstring =  Console.ReadLine();
+		int i;
+		char []reversestringArray = new char[inputstring.Length]; 
+		for(i= inputstring.Length-1; i>=0; i--)
+		{	
+		reversestringArray[i] = inputstring[i];
+		}
+		string reversestring = new string(reversestringArray);
+		if(reversestring == inputstring)
+		{
+		Console.WriteLine("String is Palindrome");
+		}else
+	    {
+		Console.WriteLine("String is not a Palindrome");
+		}
+		Console.ReadLine();
+	}
+}

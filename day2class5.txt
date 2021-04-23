@@ -1,0 +1,21 @@
+using System.IO;
+using System;
+
+class Class1
+{
+    void swap(out int a);
+    {
+           Console.WriteLine("After the Swap function");
+            a = 7;
+    }
+    static void Main()
+    {
+       Class1 class1 = new Class1();
+       int a = 3;
+       class1.swap(out a);
+       Console.WriteLine("Before the function");
+       Console.WriteLine("a=" + a);
+       Console.ReadLine();
+         
+    }
+}

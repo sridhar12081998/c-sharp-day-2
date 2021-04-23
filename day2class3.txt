@@ -1,0 +1,26 @@
+using System.IO;
+using System;
+
+class Class1
+{
+    void swap(int a, int b);
+    {
+     int temp = a;
+     a = b;
+     b = temp;
+           Console.WriteLine("Inside the Swap function");
+            Console.WriteLine("a=" +a);
+            Console.WriteLine("b=" +b);
+    }
+    static void Main()
+    {
+       Class1 class1 = new Class1();
+       int a = 3, b = 7;
+       class1.swap(a,b);
+       Console.WriteLine("Inside the main function");
+       Console.WriteLine("a=" +a);
+        Console.WriteLine("b=" +b);
+        Console.ReadLine();
+         
+    }
+}

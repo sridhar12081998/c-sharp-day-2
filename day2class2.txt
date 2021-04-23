@@ -1,0 +1,24 @@
+using System.IO;
+using System;
+
+class Class1
+{
+    void checkOddEven(int a)
+    {
+        if(a % 2 == 0)
+        {
+            Console.WriteLine("Even Number");
+        }
+        else
+        {
+            Console.WriteLine("Odd Number");
+        }
+    }
+    static void Main()
+    {
+       Class1 class1 = new Class1();
+       class1.checkOddEven(5);
+        Console.ReadLine();
+         
+    }
+}

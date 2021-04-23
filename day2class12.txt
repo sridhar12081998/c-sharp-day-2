@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter a string");
+		string inputstring =  Console.ReadLine();
+		int [] charcount = new int[100];
+		int length = inputstring.Length;
+		int i;
+		for(i=0; i <= inputstring.Length; i++)
+		{
+			charcount[inputstring[i]]++;
+		}
+		int maximum = -1;
+		char character = ' ';
+		for(i=0; i <= inputstring.Length; i++)
+		{
+		    if(maximum<charcount[inputstring[i]])
+			{
+			 maximum = charcount[inputstring[i]];
+		    }
+		 }
+			Console.WriteLine("The string is {0}", inputstring);
+			Console.WriteLine("The maximum character in given string is:" + character+ " and count is: "+ maximum);
+		    Console.ReadLine();
+	}
+}
+

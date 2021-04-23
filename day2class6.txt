@@ -1,0 +1,23 @@
+using System.IO;
+using System;
+
+namespace Program
+{
+  class Class6
+  {
+    static void Main()
+    {
+        int result;
+        int.TryParse("Ram", out result);
+        if(result == 0)
+        {
+            Console.WriteLine("Not a Number");
+        }else
+        {
+            Console.WriteLine("It is a Number");
+        }
+        Console.WriteLine(result);
+        Console.ReadLine();
+    }
+  }
+}

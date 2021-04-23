@@ -1,0 +1,28 @@
+using System.IO;
+using System;
+
+namespace Program
+{
+    class Author
+    {
+        public string name1;
+        public int rank1;
+    }
+   class Class7
+   {
+        public string name2;
+        public int rank2;
+        
+    static void Main()
+     {
+        Class7 class7 = new Class7();
+        Author author = new Author();
+        bool result;
+        result class7 is Author;
+        // result author is Author;
+        // result class7 is Class7;
+        Console.WriteLine(result);
+        Console.ReadLine();
+     }
+    }
+}
